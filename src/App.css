@@ -65,3 +65,7 @@ a {
   font-size: 10px;
   line-height: 12.39px;
 }
+.cards--list {
+  overflow-y: auto;
+  height: 90vh;
+}

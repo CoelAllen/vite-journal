@@ -5,11 +5,13 @@ import Card from "./components/Card.jsx";
 import data from "./data.jsx";
 
 function App() {
-  const cards = data.map((d) => {});
+  const cards = data.map((data) => {
+    return <Card key={data.title} {...data} />;
+  });
   return (
     <div className="App">
       <Navbar />
-      <Card />
+      <section className="cards--list">{cards}</section>
     </div>
   );
 }
